@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+                                      /*main*/
+
+
+.main{
+    background-image:linear-gradient(to right, rgba(149, 168, 150, 0.7), rgba(41, 71, 34, 0.8));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+                                      /*container*/
+.container{
+    
+    background-image:linear-gradient(to right, rgba(149, 168, 150, 0.7), rgba(41, 71, 34, 0.8)),
+    url('pakistan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+                                    /* navigation bar*/
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid green;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: blur(10px) ; 
+}
+
+                    /* left side contain pakistan pic and logo*/
+
+
+.Name{
+    display: flex;
+    margin-left: 30px;
+}
+/* pakistan image */
+.Name img{
+    width: 60px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right : 10px;
+}
+/* LOGO */
+.Name a{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+/*LOGO END*/
+.Name a:hover{
+    color: rgb(68, 206, 68);
+}
+/* Navigarion itom like aboutus services etc*/
+/* this is list */
+.navitem{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    width: 60%;
+    margin-right: 20px;
+    
+}
+.item1{
+    text-decoration: none;
+    margin-right: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: .4s;
+    
+}
+.item1:hover{
+    color: rgb(68, 206, 68);
+}
+/* green line bottom transition */
+.item1:before{
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    width: 0%;
+    height: 45%;
+    transition: .4s;
+}
+#con1 a:hover:before{
+    width: 7.5% ;
+}
+#con2 a:hover:before{
+    width: 6.5% ;
+}
+#con3 a:hover:before{
+    width: 3.7% ;
+}
+#con4 a:hover:before{
+    width: 5.5% ;
+}
+#con5 a:hover:before{
+    width: 7.3%;
+}
+/*end list items*/
+/* navigation bar button */
+/* login button*/
+.btn1 {
+    width: 15%;
+    height: 40px;
+    margin-left: 20px;
+    border:2px solid rgb(1, 95, 1);
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .4s;
+    text-align: center;
+    background-color: #fff;
+    
+}
+.btn1:hover{
+    background-color: green;
+    color: green;
+    border: 2px solid white;
+}
+/* desing anchor tag */
+.btn1 a{
+    text-decoration: none;    
+    color:green;
+    padding: 26px;
+}
+.btn1 a:hover{
+    color: white;
+}
+
+
+/* signup button*/
+.btn2{
+    border: 2px solid rgb(1, 95, 1);
+    width: 15%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .4s;
+    text-align: center;
+}
+.btn2:hover{
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+/* desing anchor tag */
+.btn2 a{
+    text-decoration: none;    
+    color:green;
+    padding: 26px;
+    text-align: center;
+    padding: 20px;
+}
+.btn2 a:hover{
+    color: white;
+}
+                                 /*  navigation bar end*/
+                                /* start first page content */
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+                       /*بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ*/
+.content h1{
+    color: #fff;
+    font-family: 'Noto Naskh Arabic', serif;
+    letter-spacing: 5px;    
+    margin-bottom: 150px;
+    margin-top: -100px;
+    cursor: pointer;
+     
+}      
+               /* bismillah under line with befor property*/
+.content h1:before{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid rgb(3, 161, 3);
+    width: 0%;
+    height: 9%;
+    transition: .4s;
+
+}    
+.content h1:hover:before{
+    width: 37%;
+} 
+                               /* bissmilah end*/
+/* 14 august */
+.content p{
+    letter-spacing: 6px;
+    font-size:  12px;
+    color: rgb(134, 204, 134);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.content p:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+/* happy independent day */
+.content h5{
+    font-size: 40px;
+    margin-top: -9px;
+}
+/* comment button*/
+.content button{
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .4s linear;
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 15px;
+   
+}
+.content a:hover{
+    color: green;
+}
+
+.content button:hover{
+    border: 2px solid green;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+}
+                                          /* first page done */
+
+                                    /* islamic stste of pakistan*/
+.pakistan{
+    
+    text-align: center;
+    margin-top: 150px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.phead span{
+    color: green;
+    font-size: 40px;
+}
+.pakinfo{
+    
+    text-align: center;
+}
+.pakinfo img{
+    width: 40%;
+    float: left;
+    height: 80vh;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+.text{
+    width: 50%;
+    float: right;
+    margin-top: 170px;
+    margin-right: 30px;
+    
+}
+.plike{
+    font-size: 20px;
+    color: rgb(32, 122, 32);
+}
+.hlike{
+    color: rgb(24, 116, 24);
+}
+                              /* second page end */
+                                /* quaid azam page */
+.quaideazam{
+   
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qhead h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.qhead h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+.qhead p{
+    color:green;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+
+.quaidinfo img{
+    width: 40%;
+    border: 4px solid green;
+    margin-top: 40px;
+    margin-left: 50px;
+    
+    
+}
+.qtext {
+    width: 48%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 85px ;
+    
+    
+}
+.qtext p{
+    font-size: 20px ;
+    color: #fff;
+}
+.qtext span{
+    color: rgb(109, 201, 109);
+    font-size: 30px;
+}
+                            /* second page end */
+                              /* allama iqbal page */
+
+.iqbal{
+    
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ihead h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.ihead h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+.ihead p{
+    color:green;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+
+.iqbalinfo img{
+    width: 40%;
+    border: 4px solid green;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.itext {
+    width: 48%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 70px ;
+    
+    
+}
+.itext p{
+    font-size: 20px ;
+    color: #fff;
+}
+.itext span{
+    color: rgb(109, 201, 109);
+    font-size: 30px;
+}
+
+
+                                 /* poetry*/
+.poetry{
+    
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 75px;
+}
+.pohead h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.pohead h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+.pohead p{
+    color:green;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+.iqbalpoetry{
+    width: 100%;
+    height: 150vh;
+}
+
+.potext {
+  
+    margin-top: 50px ;
+    text-align: center;
+
+    
+    
+}
+.potext p{
+    font-size: 30px ;
+    color: white;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 50px;
+    text-align: center;
+
+}
+.p1{
+    margin-top: 3%;
+}
+
+.potext span{
+    color: rgb(109, 201, 109);
+    font-size: 40px;
+}
+                               /* iqbal end */
+                               /* fatima jinnah*/
+.fatima{
+    margin-top: -250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fhead h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.fhead h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+.fhead p{
+    color:green;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+    
+}
+
+.fatimainfo img{
+    width: 40%;
+    border: 4px solid green;
+    margin-top: 40px;
+    margin-left: 50px;
+    
+    
+}
+.ftext {
+    width: 48%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 100px ;
+    
+    
+}
+.ftext p{
+    font-size: 20px ;
+    color: #fff;
+}
+.ftext span{
+    color: rgb(109, 201, 109);
+    font-size: 30px;
+}
+
+                    /* end fatima jinnnah */
+             /* our heroes */
+.heroes{
+   
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hhead h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.hhead span{
+    color: white;
+}
+
+.heroesinfo{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 120px auto;
+}
+.heroesinfo h1{
+    color: green;
+}
+.heroesinfo img{
+    width: 200px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.heroesinfo span{
+    color: white;
+}
+                              /* heroes end */
+                              /* quaid message*/
+    
+
+.message{
+    
+    margin-top: -110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.msghead h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    margin-top: 100px;
+
+}
+.msghead span{
+    color: white;
+}
+.msginfo{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 120px auto;
+}
+.msginfo img{
+    width: 40%;
+    border: 4px solid green;
+    margin-top: 40px;
+    margin-left: 50px;
+    
+    
+}
+.msgtext {
+    width: 48%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 60px ;
+}
+.msgtext p{
+    font-size: 30px ;
+    color: #fff;
+}
+.msgtext span{
+    color: rgb(109, 201, 109);
+    font-size: 30px;
+}
+                            /* end message*/
+                           /* last footer*/
+footer{
+   
+    margin-top: 150px;
+    background-color: rgb(2, 110, 2);
+    border: 4px solid white;
+}                
+.fimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}    
+.fimages img{
+    width: 30%;
+    border: 4px solid white;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}     
+.fimages h2{
+    font-size: 50px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    color: #fff;
+    margin-bottom: 20px;
+    
+    
+}   
+
+
+
+@media (max-width:767px){
+    .container{
+        background-size: 200%;
+        height: 58vh;
+    }
+    .navbar{
+        position: relative;
+        backdrop-filter: blur(10px) ; 
+    }
+    
+                        /* left side contain pakistan pic and logo*/
+    .Name{
+        font-size: 5px;
+        margin-left: 60px;
+        margin-top: 07px;
+    }
+    /* pakistan image */
+    .Name img{
+        width: 55px;
+        height: 40px;
+    }
+    /* LOGO */
+    .Name a{
+        font-size: 40px;
+    }
+    .navitem{
+        font-size: 0px;
+    }
+    .btn1 {
+        width: 0%;
+        height: 0px;
+    }
+    .btn2{
+        width: 0%;
+        height: 0px;
+    }
+    .content h1{
+        margin-bottom: 110px;
+        margin-top: -350px;
+        cursor: pointer;
+        font-size: 30px;
+    }      
+    .content h1:before{
+        border-bottom: 3px solid rgb(3, 161, 3);
+        width: 0%;
+        height: 8%;
+        transition: .6s;
+    }
+    .content h1:hover:before{
+        width: 100%;
+    }     
+                           /* 14 august */
+    .content p{
+        font-size:  12px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+    
+                    /* happy independent day */
+    .content h5{
+        font-size: 30px;
+        text-align: center;
+        margin-top: -9px;
+    }
+    .pakistan{
+        margin-top: 100px;
+        font-size: large;
+        flex-direction: column;
+    }
+    .pakinfo{
+        text-align: center;
+    }
+    .pakinfo img{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+    .text{
+        width: 100%;
+        margin-top: 100px;
+        float: none;
+        margin-left:0px ;
+        margin-right: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .plike{
+        font-size: 20px;
+        padding: 15px;
+    }
+    .hlike{
+        padding: 15px;
+    }
+    
+                            /* quaid */
+    .quaideazam{
+        margin-top: 100px;
+        font-size: large;
+        flex-direction: column;
+    }
+    .qhead h1{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .qhead h2{
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .qhead p{
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .quaidinfo{
+        
+        text-align: center;
+    }
+    .quaidinfo img{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    
+    }
+    .qtext{
+        width: 100%;
+        float: none;
+        font-size: 20px;
+    }
+    .qtext p{
+        padding: 15px;
+    }
+                              /* allama */
+    .iqbal{
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: large;
+        flex-direction: column;
+
+    }
+    .ihead h1{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+    .ihead h2{
+        font-size: 30px;
+    }
+    .ihead p{
+        font-size: 30px;
+    }
+    
+    .iqbalinfo img{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+    .itext{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        float: none;
+        margin-left:0px ;
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    .itext p{
+        padding: 15px;
+
+    }
+
+                             /* poetry*/
+    .poetry{
+        text-align: center;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: large;
+        margin-left: 0px;
+    }
+    .pohead h2{
+        font-size: 30px;
+    }
+   
+    .potext p{
+        font-size: 20px ;
+        line-height: 60px;
+    }
+    .p1{
+        margin-top: 3%;
+    }
+                         /* fatima jinnah*/
+     .fatima{ 
+        margin-top: -420px;
+        font-size: large;
+        flex-direction: column;
+    }
+    .fhead h1{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .fhead h2{
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .fhead p{
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .fatimainfo{
+        
+        text-align: center;
+    }
+    .fatimainfo img{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    
+    }
+    .ftext {
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        float: none;
+        margin-left:0px ;
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    
+    .ftext p{
+        padding: 15px;
+    }
+    .ftext span{
+        color: rgb(27, 180, 27);
+    }
+
+                             /* Our Heroes */
+     .heroes{
+        margin-top: 40px;
+        
+    }
+    .hhead h1{
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+    }
+    .hhead span{
+        color: green;
+    }
+    
+    .heroesinfo{
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        margin: 120px auto;
+        margin-top: 30px;
+    }
+                            /*quaid's message*/
+    .message{
+        margin-top: 0px;
+        font-size: large;
+        flex-direction: column;
+    }
+    .msghead p{
+        font-size: 30px;
+        margin-top: -40px;
+    }
+    .msginfo{
+        text-align: center;
+    }
+    .msginfo img{
+        width: 100%;
+        margin-top:0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .msgtext{
+        width: 100%;
+        float: none;
+        font-size: 20px;
+    }
+    .msgtext p{
+        padding: 15px;
+    }
+
+    footer{
+        margin-top: 100px;
+        width: 100%;
+    }                
+   
+    
+    
+
+
+
+
+
+}
+
